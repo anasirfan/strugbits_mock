@@ -32,7 +32,7 @@ const StickyHeader = ({ tabs, activeTab, selectedMeals, onTabChange, onAddToWeek
       
             <button
               onClick={onAddToWeek}
-              className={`bg-[#004370] text-white px-6 py-3 rounded-full font-medium text-lg shadow-lg shadow-[#FF6B57]/30 hover:bg-[#004370] hover:bg-opacity-50 transition-colors duration-300 whitespace-nowrap ${selectedMeals.length > 0 ? 'opacity-100' : 'opacity-0'}`}
+              className={`bg-[#004370] text-white px-6 py-3 rounded-lg font-medium text-lg shadow-lg shadow-[#FF6B57]/30 hover:bg-[#004370] hover:bg-opacity-50 transition-colors duration-300 whitespace-nowrap ${selectedMeals.length > 0 ? 'opacity-100' : 'opacity-0'}`}
             >
               Add to Week
             </button>
