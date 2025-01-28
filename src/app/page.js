@@ -113,7 +113,7 @@ export default function Home() {
           onAddToWeek={handleAddToWeek}
         />
 
-        <div className="max-w-[1920px] mx-auto py-8">
+        <div className="max-w-[1920px]  py-8">
           {activeTab === 'all' ? (
             <MealList
               meals={meals}

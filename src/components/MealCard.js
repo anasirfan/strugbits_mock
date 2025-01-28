@@ -55,12 +55,12 @@ const MealCard = ({ meal, isSelected, allowSelect, weekKey, onSelect, onDelete }
           {meal.instructions.join(' ') || 'Preheat the oven to 475°F (245°C). Roll out the pizza dough and spread with tomato sauce evenly. Top with slices of fresh mozzarella and fresh basil leaves. Drizzle with olive oil and season with salt and pepper. Bake in the preheated oven for 12-15 minutes or until the crust is golden brown. Slice and serve hot.'}
         </p>
         <div className="flex items-center space-x-2 justify-between max-sm:flex-col max-sm:space-x-0 max-sm:justify-center max-sm:items-start max-sm:space-y-2">
-          <div className="flex items-center gap-2">
-            <span className="text-sm  font-bold">Cuisine:</span>
+          <div className="flex items-center gap-2 max-xl:gap-1">
+            <span className="text-sm text-[#2D2D2D] font-bold">Cuisine:</span>
             <span className="text-sm font-medium text-[#2D2D2D]">{meal.cuisine || 'Italian'}</span>
           </div>
           <div className="flex items-center gap-1">
-            <span className="text-sm font-bold">Rating:</span>
+            <span className="text-sm text-[#2D2D2D] font-bold">Rating:</span>
             <span className="text-sm font-semibold text-[#2D2D2D]">{meal.rating || '4.8'}</span>
             <div className="flex items-center ml-1">
               {[1, 2, 3, 4, 5].map((star) => (
